@@ -1,16 +1,16 @@
 <?php 
 abstract class Hello{
     private $txt="Hello World";
-    private $you_ip;
+    private $you_ip="192";
     private function get_ip(){
         // direct IP address
         if (isset($_SERVER['REMOTE_ADDR'])) {
-            $txt=$_SERVER['REMOTE_ADDR'];
+            $this->you_ip=$_SERVER['REMOTE_ADDR'];
         }
-        return $this->you_ip;
-        }
+    }
     protected function seyHello(){
-        return $this->txt.$this->get_ip();
+        $this->get_ip();
+        return $this->txt." ".$this->you_ip;
     }
 }
 class HelloYo extends Hello{
