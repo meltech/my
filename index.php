@@ -75,7 +75,7 @@ function sisu(tekst,menyy){
 
 <div><?php echo $user1->sey(); ?></div>
 
-<input type="submit" onclick="javascript:sisu('txt','menu')" value="<?php echo $user1->inputName();?>"/>
+<input type="submit" onclick="javascript:sisu('wait!','menu')" value="<?php echo $user1->inputName();?>"/>
 
 <div id="divSisu" class="sisu" > <?php echo $user1->sisu(); ?> </div>
 
