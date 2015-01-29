@@ -1,5 +1,5 @@
 <?php
 
-echo "Tekst peale clicki serverist ilma lehte uuesti laadimata.";
+echo "Text from server without page reload.";
 
 ?>
